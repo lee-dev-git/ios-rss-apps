@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		68513A0C25A1D86400D78EAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68513A0B25A1D86400D78EAE /* ContentView.swift */; };
 		68513A0E25A1D86500D78EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68513A0D25A1D86500D78EAE /* Assets.xcassets */; };
 		68513A1125A1D86500D78EAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68513A1025A1D86500D78EAE /* Preview Assets.xcassets */; };
+		68513A1A25A1DE4000D78EAE /* AppsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68513A1925A1DE4000D78EAE /* AppsViewModel.swift */; };
+		68513A1F25A1E5C300D78EAE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 68513A1E25A1E5C300D78EAE /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,7 @@
 		68513A0D25A1D86500D78EAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68513A1025A1D86500D78EAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		68513A1225A1D86500D78EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68513A1925A1DE4000D78EAE /* AppsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68513A1F25A1E5C300D78EAE /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +58,7 @@
 			children = (
 				68513A0925A1D86400D78EAE /* AppsApp.swift */,
 				68513A0B25A1D86400D78EAE /* ContentView.swift */,
+				68513A1925A1DE4000D78EAE /* AppsViewModel.swift */,
 				68513A0D25A1D86500D78EAE /* Assets.xcassets */,
 				68513A1225A1D86500D78EAE /* Info.plist */,
 				68513A0F25A1D86500D78EAE /* Preview Content */,
@@ -85,6 +90,9 @@
 			dependencies = (
 			);
 			name = Apps;
+			packageProductDependencies = (
+				68513A1E25A1E5C300D78EAE /* Kingfisher */,
+			);
 			productName = Apps;
 			productReference = 68513A0625A1D86400D78EAE /* Apps.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +120,9 @@
 				Base,
 			);
 			mainGroup = 685139FD25A1D86400D78EAE;
+			packageReferences = (
+				68513A1D25A1E5C300D78EAE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 68513A0725A1D86400D78EAE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68513A0C25A1D86400D78EAE /* ContentView.swift in Sources */,
+				68513A1A25A1DE4000D78EAE /* AppsViewModel.swift in Sources */,
 				68513A0A25A1D86400D78EAE /* AppsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +340,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68513A1D25A1E5C300D78EAE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68513A1E25A1E5C300D78EAE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68513A1D25A1E5C300D78EAE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 685139FE25A1D86400D78EAE /* Project object */;
 }
